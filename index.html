@@ -3,73 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHINTEGRATOR</title>
+    <title>Phintegrator Logo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body, html {
-            height: 100%;
-            font-family: 'Arial', sans-serif;
+        body {
+            background-color: black;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #000;
+            height: 100vh;
+            flex-direction: column;
         }
-
-        .container {
-            text-align: center;
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 7rem; /* Increased size */
         }
-
-        .phintegrator {
-            font-size: 6rem;
-            font-weight: 700;
-            letter-spacing: 0.2rem;
-            color: white;
+        .subtext {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem; /* Increased size */
         }
-
-        .phintegrator span.ph {
-            color: #007bff; /* Blue */
-        }
-
-        .phintegrator span.integrator {
-            color: #fff; /* White */
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1200px) {
-            .phintegrator {
-                font-size: 5rem;
-            }
-        }
-
-        @media (max-width: 900px) {
-            .phintegrator {
-                font-size: 4rem;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .phintegrator {
-                font-size: 3rem;
-            }
-        }
-
-        @media (max-width: 400px) {
-            .phintegrator {
-                font-size: 2rem;
-            }
+        .coming-soon {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: gray;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="phintegrator">
-            <span class="ph">PH</span><span class="integrator">INTEGRATOR</span>
-        </div>
+    <div class="text-center text-white">
+        <h1 class="logo font-bold">
+            <span class="text-blue-500">ph</span>integrator
+        </h1>
+        <p class="subtext mt-2">Empowering Minds, Integrating Futures</p>
+        <p class="coming-soon">Content will be available soon</p>
     </div>
 </body>
 </html>
